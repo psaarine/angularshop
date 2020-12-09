@@ -1,0 +1,8 @@
+<div class="shop-container">
+  <div class="shop-items">
+    <app-shop-card *ngFor="let item of shop; let i = index" [currentShop]="shop" [index]="i" [data]="item" (shopFunction)="handleChange($event)"></app-shop-card>
+  </div>
+  <div class="shop-info">
+    <app-shop-info (click)="resetShop()" [items]="shop"></app-shop-info>
+  </div>
+</div>

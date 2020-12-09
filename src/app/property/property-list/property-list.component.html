@@ -1,0 +1,16 @@
+<div class="item-headers">
+  <h1 class="axe-item-header">Axes</h1>
+</div>
+<div class="axe-filters">
+  <div class="axe-filters-buttons">
+  <ul>
+    <li *ngFor="let rarity of rarities"><button (click)="setFilter(rarity)">{{rarity}}</button></li>
+    <li><button (click)="setFilter('')">Reset</button></li>
+  </ul>
+  </div>
+</div>
+<div class="axe-card-cont">
+  <div *ngFor="let item of itemChunk |filter:filterString:'rarity'">
+    <app-property-card [itemData]="item"></app-property-card>
+  </div>
+</div>

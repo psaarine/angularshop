@@ -1,0 +1,10 @@
+<div class="item-headers">
+  <h1 class="axe-item-header">Backpacks</h1>
+</div>
+
+<div class="bag-card-cont">
+  <div *ngFor="let item of bagChunk">
+    <app-property-card [itemData]="item"></app-property-card>
+  </div>
+</div>
+

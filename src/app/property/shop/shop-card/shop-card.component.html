@@ -1,0 +1,19 @@
+<div class="shop-card">
+  <div class="shop-card-image" [style.backgroundColor]="colors[data[0].rarity]">
+    <img [src]="data[0].images.icon"/>
+  </div>
+  <div class="shop-card-info">
+      <div class="shop-card-info-buttons">
+        <ul class="shop-card-info-buttons-list">
+          <li (click)="decrementItem()">-</li>
+          <li>{{data[1]}}</li>
+          <li (click)="incrementItem()">+</li>
+        </ul>
+      </div>
+    <div class="shop-card-info-paras">
+      <h1>{{data[0].name}}</h1>
+      <p>{{data[0].description}}</p>
+      <p>Price: {{data[0].price}}</p>
+  </div>
+  </div>
+</div>

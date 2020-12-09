@@ -1,0 +1,37 @@
+.item-card
+  max-width: 100%
+  margin: 5px
+  overflow: hidden
+
+
+  .item-card-img
+    margin:10px
+    overflow: hidden
+    transition-timing-function: ease-out
+    position: relative
+
+  .item-card-body
+    margin: 10px
+    min-height: 200px
+    text-align: center
+    padding: 20px
+
+  img
+    width: 100%
+    padding: 5px
+    transition: 1s
+
+.item-card:hover img
+  transform: scale(1.2)
+
+.item-card:hover .member-icons
+  bottom: 0px
+
+.member-icons
+  position: absolute
+  left: 0px
+  right: 0px
+  bottom: -30%
+  margin-right: auto
+  margin-left: auto
+  transition: 1s

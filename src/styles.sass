@@ -1,0 +1,105 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/alertifyjs/build/css/alertify.min.css"
+@import "../node_modules/alertifyjs/build/css/themes/bootstrap.min.css"
+
+@font-face
+  font-family: "fortnite"
+  src: url(fonts/BurbankBigCondensed-Black.otf)
+
+
+$header-color: red
+$style-orange: #ffb319
+$text-light: white
+$text-header: #ff0022
+$style-yellow: #ffd500
+$card-bg: #ffd500
+$shop-card-info: #fff67d
+
+/* Index styling begins */
+
+*
+  font-family: fortnite
+
+.item-headers
+  width: 70%
+  height: 100px
+  margin: auto
+  display: flex
+  align-items: center
+
+  h1
+    margin-left: 20px
+    color: $header-color
+
+.index-item-info-wrapper
+  background-color: $style-orange
+
+.header
+  font-family: fortnite
+
+  h1
+    font-size: 5em
+
+
+.index-item-header
+  font-family: fortnite
+  font-size: 3em
+  color: $text-header
+
+.light
+  color:$text-light
+
+.index-cont
+  background-color: $style-yellow
+
+/* Index styling ends, axes style begins */
+
+.item-card
+  background-color: $card-bg
+
+
+  .item-card-body
+
+    h2
+      color: $text-light
+      font-size: 1.5rem
+
+    h3
+      color: $text-light
+
+
+
+.member-icons
+
+/* Axes styling */
+
+.axe-item-header
+  color: $text-header
+  font-size: 5em
+
+/* Shop styling */
+
+.shop-card
+  background-color: $card-bg
+
+.shop-info-wrapper
+  position: relative
+
+.shop-info-button
+  margin: auto
+  padding: 20px
+  border: 1px solid black
+  text-align: center
+  margin-top: 80px
+  width: 100%
+
+.shop-card-info-buttons-list
+  font-size: 2rem
+
+.shop-card-info
+  background-color: $shop-card-info
+
+  h1
+    color: $header-color
+
+

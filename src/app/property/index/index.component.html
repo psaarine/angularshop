@@ -1,0 +1,16 @@
+<div class="index-cont">
+  <div class="header">
+    <h1>Newest products. Coolest loot.</h1></div>
+    <div class="index-item-gallery" [style.background-color]="colors[infoData.rarity]">
+  <gallery [items]="images" id="myGallery" [thumb]="false" [autoPlay]="true" (indexChange)="handleIndex($event)"
+  [style.background-color]="colors[infoData.rarity]"
+  ></gallery>
+  </div>
+  <div class="index-item-info-wrapper">
+    <div class="index-item-info-content">
+    <h3 class="index-item-header">{{infoData.name}}</h3>
+    <h3 class="light">{{infoData.description}}</h3>
+    <h3 class="light">{{infoData.rarity |titlecase}}</h3>
+  </div>
+  </div>
+</div>
